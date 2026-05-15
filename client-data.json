@@ -16,8 +16,8 @@
   "FACEBOOK_URL":         "https://www.facebook.com/profile.php?id=100083867625679",
   "INSTAGRAM_URL":        "#",
 
-  "LOGO_IMAGE":           "images/logo.png",
-  "HERO_IMAGE":           "images/hero-image.webp",
+  "LOGO_IMAGE":           "images/client-photos/logo.png",
+  "HERO_IMAGE":           "images/client-photos/hero.jpg",
 
   "HERO HEADLINE":        "Real-World Self-Defense",
   "HERO SUBHEADLINE":     "East Texas' Premier Krav Maga Academy in Lindale, TX",
@@ -28,7 +28,7 @@
   "INSTRUCTOR_TITLE":     "Owner & Head Coach",
   "INSTRUCTOR_BIO":       "Asher Lester is a Certified 3rd Degree Black Belt Krav Maga Instructor, Mindfulness Teacher, Breathing Coach, and Behavioral Analyst with a Master of Education. With over 18 years in Behavioral Analysis, Asher's unique Balanced Warrior™ approach blends physical readiness with emotional intelligence — helping East Texans of all ages become strong, resilient, and ready for life's challenges.",
 
-  "GOOGLE_MAPS_EMBED_URL": "https://www.google.com/maps/embed/v1/place?key=AIzaSyD-9tSrke72PouQMnMX-a7eZSW0jkFMBWY&q=18492+US+HWY+69+N+Lindale+TX+75771",
+  "GOOGLE_MAPS_EMBED_URL": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.089!2d-95.4130182!3d32.5358088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x64951be9378e040b%3A0xde3a858dd674815c!2sAgoge%20Krav%20Maga!5e0!3m2!1sen!2sus!4v1715800000000",
 
   "STAR_RATING":          "5.0",
   "REVIEW_COUNT":         "14",
@@ -36,14 +36,14 @@
   "YEARS_COUNT":          "3+",
 
   "PROGRAM 1 NAME":       "Adult Krav Maga",
-  "PROGRAM 1 PHOTO":      "images/adult-class.webp",
+  "PROGRAM 1 PHOTO":      "images/client-photos/program-1.jpg",
   "PROGRAM 1 DAYS":       "Classes 4 Nights Per Week",
   "PROGRAM 2 NAME":       "Youth Krav Maga",
-  "PROGRAM 2 PHOTO":      "images/kids-class-2.webp",
+  "PROGRAM 2 PHOTO":      "images/client-photos/program-2.jpg",
   "PROGRAM 2 DAYS":       "Classes 4 Nights Per Week",
 
   "INSTRUCTOR 1 NAME":    "Asher Lester",
-  "INSTRUCTOR 1 PHOTO":   "images/coach-demo.webp",
+  "INSTRUCTOR 1 PHOTO":   "images/client-photos/instructor-1.jpg",
 
   "TESTIMONIAL 1 QUOTE":  "Started classes a few months ago and the experience has been really fun and informative. Coaches Trea and Elle are both extremely knowledgeable and accommodating for all levels of experience. They offer flexible class nights 4 nights per week and reasonable monthly pricing. I highly recommend joining up!",
   "TESTIMONIAL 1 NAME":   "Chad Wright",

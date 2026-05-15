@@ -1,44 +1,45 @@
-AGOGE KRAV MAGA — CLIENT PHOTOS NEEDED
-=======================================
-Place final photos in this folder, then copy them to ../  (the images/ folder)
-and update the filenames in client-data.json accordingly.
+AGOGE KRAV MAGA — CLIENT PHOTOS
+================================
+Place final photos in THIS folder (images/client-photos/) using EXACTLY
+the filenames below. Then rebuild with: node fill-template.js
 
 REQUIRED FILES
 --------------
 logo.png
+  → Main Agoge Krav Maga logo (white on transparent background)
   Source: https://irp.cdn-website.com/fff1840a/dms3rep/multi/Asset+1logos-2d0ba574.png
-  Description: Main Agoge Krav Maga logo (white on transparent)
 
-hero-image.webp
+hero.jpg
+  → Hero/background image — wide action shot for homepage banner
   Source: https://irp.cdn-website.com/fff1840a/dms3rep/multi/Agoge+1+(5).png
-  Description: Hero/background image — class action shot used on homepage
 
-adult-class.webp
+program-1.jpg
+  → Adult Krav Maga class photo (used on Program 1 card)
   Source: https://lirp.cdn-website.com/fff1840a/dms3rep/multi/opt/Agoge+1+(12)-1920w.png
-  Description: Adult Krav Maga training photo (used on Program 1 card)
 
-kids-class-2.webp
+program-2.jpg
+  → Youth Krav Maga class photo (used on Program 2 card)
   Source: https://lirp.cdn-website.com/fff1840a/dms3rep/multi/opt/37-1920w.png
-  Description: Youth Krav Maga class photo (used on Program 2 card)
 
-coach-demo.webp
+instructor-1.jpg
+  → Asher Lester head/coach photo
   Source: https://lirp.cdn-website.com/fff1840a/dms3rep/multi/opt/IMG_0301-1920w.jpg
-  Description: Asher Lester instructor photo
 
-coach-elle.webp
+OPTIONAL EXTRAS
+---------------
+instructor-2.jpg  → Elle Trevino photo
   Source: https://irp.cdn-website.com/fff1840a/dms3rep/multi/Agoge+2+(7).png
-  Description: Elle Trevino instructor/co-owner photo
 
-facility-1.webp
+facility-1.jpg    → Training floor / action shot
   Source: https://irp.cdn-website.com/fff1840a/dms3rep/multi/Agoge+1+(14).png
-  Description: Action/facility background photo
 
-facility-2.webp
+facility-2.jpg    → Additional facility/action photo
   Source: https://irp.cdn-website.com/fff1840a/dms3rep/multi/Agoge+2+(16).png
-  Description: Additional training/facility photo
 
 NOTES
 -----
-- Convert all JPG/PNG to WebP at 85% quality for best Cloudflare Pages performance
-- Recommended hero image size: 1920x1080 minimum
-- Logo should be PNG with transparent background
+- Convert all source PNGs to JPG at 85% quality before placing here
+- Hero image: 1920x1080 minimum recommended
+- Logo: keep as PNG with transparent background
+- After adding photos, run: node fill-template.js  (from /home/edelm/agoge-krav-maga/)
+- Then commit and push to trigger Cloudflare Pages redeploy
