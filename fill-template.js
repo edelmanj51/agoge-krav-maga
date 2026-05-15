@@ -32,7 +32,10 @@ if (!CHECK_ONLY) {
   if (fs.existsSync(imgSrc) && !fs.existsSync(imgDst)) {
     fs.mkdirSync(imgDst);
     for (const img of fs.readdirSync(imgSrc)) {
-      fs.copyFileSync(path.join(imgSrc, img), path.join(imgDst, img));
+      const srcPath = path.join(imgSrc, img);
+      if (fs.statSync(srcPath).isFile()) {
+        fs.copyFileSync(srcPath, path.join(imgDst, img));
+      }
     }
   }
 }
@@ -43,19 +46,19 @@ const unfilled = new Set();
 for (const file of htmlFiles) {
   let content = fs.readFileSync(file, 'utf8');
 
-  // Replace known tokens from client-data.json
+  // Replace known tokens from client-data.json (including empty values → strip)
   for (const [key, value] of Object.entries(data)) {
-    if (value === '' || value == null) continue;
     const placeholder = `[${key}]`;
-    content = content.split(placeholder).join(value);
+    content = content.split(placeholder).join(value ?? '');
   }
 
-  // Collect any remaining unfilled tokens
+  // Collect any remaining unfilled tokens, then strip them
   let m;
   TOKEN_RE.lastIndex = 0;
   while ((m = TOKEN_RE.exec(content)) !== null) {
     unfilled.add(m[1]);
   }
+  content = content.replace(TOKEN_RE, '');
 
   if (!CHECK_ONLY) {
     fs.writeFileSync(path.join('dist', file), content, 'utf8');
