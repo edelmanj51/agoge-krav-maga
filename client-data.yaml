@@ -1,0 +1,61 @@
+SLUG: agoge-krav-maga-lindale
+# NOTE: No GOOGLE_PLACE_ID in ChIJ format — Maps CID: 0x64951be9378e040b:0xde3a858dd674815c
+SCHOOL_NAME: "Agoge Krav Maga"
+MARTIAL_ART: Krav Maga
+SITE_URL: https://www.agogekm.com
+DOMAIN: agogekm.com
+CITY: Lindale
+STATE: TX
+ZIP: "75771"
+ADDRESS_LINE_1: "18492 US Hwy 69 N"
+PHONE: "(903) 993-4450"
+EMAIL: agogekravmaga@gmail.com
+# NOTE: HOURS — only Monday confirmed from Google Maps. Full schedule TBD — get from client.
+HOURS: "Mon 4:30pm–7:30pm (schedule TBD)"
+# NOTE: YEAR_FOUNDED intentionally omitted — not found on site or Google. Ask client. IF blocks hide it.
+PRIMARY_COLOR: "#8C2B2B"
+SECONDARY_COLOR: "#22323D"
+LOGO_IMAGE: brand_assets/logo.png
+FACEBOOK_URL: https://www.facebook.com/profile.php?id=100083867625679
+INSTAGRAM_URL: https://www.instagram.com/agogekravmaga/
+HERO_IMAGE: images/hero/hero.jpg
+HERO_HEADLINE: "Real-World Self-Defense for East Texas Families"
+HERO_SUBHEADLINE: "Lindale's Premier Krav Maga Academy — Adults, Teens &amp; Kids Welcome"
+HERO_SUBTEXT: "Join a mission-driven community where you'll build real skills, unshakable confidence, and the mindset of a Balanced Warrior. Book your free class today."
+STAR_RATING: "5.0"
+# NOTE: REVIEW_COUNT is a conservative estimate — not confirmed. Verify via Google or client before launch.
+REVIEW_COUNT: "25"
+# NOTE: STUDENT_COUNT intentionally omitted — not found on site. IF block hides the stat.
+ABOUT_TEXT: "Agoge Krav Maga is a mission-driven self-defense community in Lindale, TX, serving Tyler and all of East Texas. We empower families, adults, and first responders with life-saving skills, practical fitness, and unshakable confidence through our Balanced Warrior™ training system."
+INSTRUCTOR_1_NAME: "Asher Lester"
+INSTRUCTOR_1_PHOTO: images/instructor/asher.jpg
+INSTRUCTOR_1_TITLE: "Owner / Head Coach, Certified 3rd Degree Black Belt"
+INSTRUCTOR_1_BIO: "Asher Lester is a Certified 3rd Degree Black Belt Krav Maga Instructor, Mindfulness Teacher, Breathing Coach, and Behavioral Analyst with a Master of Education. With over 18 years in behavioral analysis and extensive certifications in mindfulness and breathwork from globally recognized programs, Asher's philosophy centers on building Balanced Warriors — individuals who are courageous, compassionate, emotionally intelligent, and physically capable of defending themselves and protecting others."
+PROGRAM_1_NAME: "Adult Krav Maga"
+PROGRAM_1_PHOTO: images/programs/program-1/adult-krav-maga.jpg
+PROGRAM_1_AGE_RANGE: "Ages 16+"
+PROGRAM_1_DAYS: "Check Schedule"
+PROGRAM_1_SESSION_LEN: "60-min classes"
+PROGRAM_1_DESCRIPTION: "The world's most effective real-world self-defense system — built for everyday people. Learn to defend against unarmed attacks, weapons, and multiple attackers. No experience required. Beginner-friendly classes led by certified instructors."
+PROGRAM_2_NAME: "Youth Krav Maga (Teens)"
+PROGRAM_2_PHOTO: images/programs/program-2/youth-krav-maga.jpg
+PROGRAM_2_AGE_RANGE: "Ages 9–15"
+PROGRAM_2_DAYS: "Check Schedule"
+PROGRAM_2_SESSION_LEN: "60-min classes"
+PROGRAM_2_DESCRIPTION: "Equip your teen with the skills to prevent bullying, set strong boundaries, and defend themselves confidently. Age-appropriate, realistic self-defense in a safe and supportive environment focused on growth and respect."
+PROGRAM_3_NAME: "Youth Krav Maga (Kids)"
+PROGRAM_3_PHOTO: images/programs/program-3/family.jpg
+PROGRAM_3_AGE_RANGE: "Ages 5–8"
+PROGRAM_3_DAYS: "Check Schedule"
+PROGRAM_3_SESSION_LEN: "45-min classes"
+PROGRAM_3_DESCRIPTION: "Introduce your child to the fundamentals of self-defense, awareness, and confidence in a fun, age-appropriate setting. Parents across East Texas trust our Kids program because it prepares young people for real-world situations — not trophies."
+# NOTE: All webhook/calendar URLs below are PLACEHOLDER values — replace with actual GHL URLs before launch.
+TRIAL_WEBHOOK_URL: https://services.leadconnectorhq.com/hooks/AGOGE_PLACEHOLDER/webhook-trigger/trial
+STARTER_KIT_WEBHOOK_URL: https://services.leadconnectorhq.com/hooks/AGOGE_PLACEHOLDER/webhook-trigger/kit
+QUIZ_WEBHOOK_URL: https://services.leadconnectorhq.com/hooks/AGOGE_PLACEHOLDER/webhook-trigger/quiz
+FINAL_CTA_WEBHOOK_URL: https://services.leadconnectorhq.com/hooks/AGOGE_PLACEHOLDER/webhook-trigger/final
+BOOKING_CALENDAR_URL: https://api.leadconnectorhq.com/widget/group/AGOGE_PLACEHOLDER
+PRIVACY_POLICY_URL: https://www.agogekm.com/privacy-policy
+REVIEWER_1_NAME: ""
+REVIEWER_1_DATE: ""
+REVIEWER_1_TEXT: ""
