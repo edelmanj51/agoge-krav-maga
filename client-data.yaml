@@ -10,8 +10,8 @@ ZIP: "75771"
 ADDRESS_LINE_1: "18492 US Hwy 69 N"
 PHONE: "(903) 993-4450"
 EMAIL: agogekravmaga@gmail.com
-# NOTE: HOURS — only Monday confirmed from Google Maps. Full schedule TBD — get from client.
-HOURS: "Mon 4:30pm–7:30pm (schedule TBD)"
+HOURS: "Mon, Tue, Thu & Fri 4:30–7:30pm"
+HOURS_SHORT: "Mon, Tue, Thu & Fri 4:30-7:30pm"
 # NOTE: YEAR_FOUNDED intentionally omitted — not found on site or Google. Ask client. IF blocks hide it.
 PRIMARY_COLOR: "#8C2B2B"
 SECONDARY_COLOR: "#22323D"
@@ -31,24 +31,29 @@ INSTRUCTOR_1_NAME: "Asher Lester"
 INSTRUCTOR_1_PHOTO: images/instructor/asher.jpg
 INSTRUCTOR_1_TITLE: "Owner / Head Coach, Certified 3rd Degree Black Belt"
 INSTRUCTOR_1_BIO: "Asher Lester is a Certified 3rd Degree Black Belt Krav Maga Instructor, Mindfulness Teacher, Breathing Coach, and Behavioral Analyst with a Master of Education. With over 18 years in behavioral analysis and extensive certifications in mindfulness and breathwork from globally recognized programs, Asher's philosophy centers on building Balanced Warriors — individuals who are courageous, compassionate, emotionally intelligent, and physically capable of defending themselves and protecting others."
+INSTRUCTOR_2_NAME: "Elle Trevino"
+INSTRUCTOR_2_PHOTO: images/instructor/elle.png
+INSTRUCTOR_2_TITLE: "Co-Owner & Certified Krav Maga Instructor, ISSA Personal Trainer"
+INSTRUCTOR_2_BIO: "Elle Trevino has trained in Krav Maga for 12 years and is a Phase C certified instructor through Krav Maga Worldwide and the Krav Maga Association of America. A former Registered Behavior Technician in a pediatric psychology clinic, Elle brings exceptional coaching skill to every age group — certified in nonviolent de-escalation, combatives, and self-defense for both youth and adults."
 PROGRAM_1_NAME: "Adult Krav Maga"
 PROGRAM_1_PHOTO: images/programs/program-1/adult-krav-maga.jpg
 PROGRAM_1_AGE_RANGE: "Ages 16+"
-PROGRAM_1_DAYS: "Check Schedule"
+PROGRAM_1_DAYS: "Mon, Tue, Thu & Fri"
 PROGRAM_1_SESSION_LEN: "60-min classes"
 PROGRAM_1_DESCRIPTION: "The world's most effective real-world self-defense system — built for everyday people. Learn to defend against unarmed attacks, weapons, and multiple attackers. No experience required. Beginner-friendly classes led by certified instructors."
 PROGRAM_2_NAME: "Youth Krav Maga (Teens)"
 PROGRAM_2_PHOTO: images/programs/program-2/youth-krav-maga.jpg
 PROGRAM_2_AGE_RANGE: "Ages 9–15"
-PROGRAM_2_DAYS: "Check Schedule"
+PROGRAM_2_DAYS: "Mon, Tue, Thu & Fri"
 PROGRAM_2_SESSION_LEN: "60-min classes"
 PROGRAM_2_DESCRIPTION: "Equip your teen with the skills to prevent bullying, set strong boundaries, and defend themselves confidently. Age-appropriate, realistic self-defense in a safe and supportive environment focused on growth and respect."
 PROGRAM_3_NAME: "Youth Krav Maga (Kids)"
 PROGRAM_3_PHOTO: images/programs/program-3/family.jpg
 PROGRAM_3_AGE_RANGE: "Ages 5–8"
-PROGRAM_3_DAYS: "Check Schedule"
+PROGRAM_3_DAYS: "Mon, Tue, Thu & Fri"
 PROGRAM_3_SESSION_LEN: "45-min classes"
 PROGRAM_3_DESCRIPTION: "Introduce your child to the fundamentals of self-defense, awareness, and confidence in a fun, age-appropriate setting. Parents across East Texas trust our Kids program because it prepares young people for real-world situations — not trophies."
+CLASS_SCHEDULE_HTML: "<table class=\"sched\" role=\"table\" aria-label=\"Weekly class schedule\"><thead><tr><th scope=\"col\">Program</th><th scope=\"col\">Monday</th><th scope=\"col\">Tuesday</th><th scope=\"col\">Thursday</th><th scope=\"col\">Friday</th></tr></thead><tbody><tr><td>Youth Krav Maga (Kids)<br><small style=\"color:#64748b\">Ages 5–8</small></td><td><span class=\"time-slot kids\">4:30pm – 5:15pm</span></td><td><span class=\"time-slot kids\">4:30pm – 5:15pm</span></td><td><span class=\"time-slot kids\">4:30pm – 5:15pm</span></td><td><span class=\"time-slot kids\">4:30pm – 5:15pm</span></td></tr><tr><td>Youth Krav Maga (Teens)<br><small style=\"color:#64748b\">Ages 9–15</small></td><td><span class=\"time-slot teens\">5:30pm – 6:15pm</span></td><td><span class=\"time-slot teens\">5:30pm – 6:15pm</span></td><td><span class=\"time-slot teens\">5:30pm – 6:15pm</span></td><td><span class=\"time-slot teens\">5:30pm – 6:15pm</span></td></tr><tr><td>Adult Krav Maga<br><small style=\"color:#64748b\">Ages 16+</small></td><td><span class=\"time-slot adult\">6:30pm – 7:30pm</span></td><td><span class=\"time-slot adult\">6:30pm – 7:30pm</span></td><td><span class=\"time-slot adult\">6:30pm – 7:30pm</span></td><td><span class=\"time-slot adult\">6:30pm – 7:30pm</span></td></tr></tbody></table>"
 # NOTE: All webhook/calendar URLs below are PLACEHOLDER values — replace with actual GHL URLs before launch.
 TRIAL_WEBHOOK_URL: https://services.leadconnectorhq.com/hooks/AGOGE_PLACEHOLDER/webhook-trigger/trial
 STARTER_KIT_WEBHOOK_URL: https://services.leadconnectorhq.com/hooks/AGOGE_PLACEHOLDER/webhook-trigger/kit
@@ -56,6 +61,4 @@ QUIZ_WEBHOOK_URL: https://services.leadconnectorhq.com/hooks/AGOGE_PLACEHOLDER/w
 FINAL_CTA_WEBHOOK_URL: https://services.leadconnectorhq.com/hooks/AGOGE_PLACEHOLDER/webhook-trigger/final
 BOOKING_CALENDAR_URL: https://api.leadconnectorhq.com/widget/group/AGOGE_PLACEHOLDER
 PRIVACY_POLICY_URL: https://www.agogekm.com/privacy-policy
-REVIEWER_1_NAME: ""
-REVIEWER_1_DATE: ""
-REVIEWER_1_TEXT: ""
+# No reviewers yet — add REVIEWER_1_NAME, REVIEWER_1_DATE, REVIEWER_1_TEXT when Google reviews are verified

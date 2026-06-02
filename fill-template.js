@@ -30,7 +30,6 @@ const IMG_EXT    = /\.(png|jpg|jpeg|webp|gif|svg)$/i;
 const REQUIRED = [
   'SCHOOL_NAME', 'MARTIAL_ART', 'SITE_URL', 'CITY', 'STATE',
   'ADDRESS_LINE_1', 'PHONE', 'HOURS',
-  // NOTE: YEAR_FOUNDED and STUDENT_COUNT intentionally omitted for this client — IF blocks hide them
   'PRIMARY_COLOR', 'SECONDARY_COLOR', 'LOGO_IMAGE',
   'HERO_IMAGE', 'HERO_HEADLINE', 'HERO_SUBHEADLINE', 'HERO_SUBTEXT',
   'STAR_RATING', 'REVIEW_COUNT',
@@ -170,6 +169,9 @@ for (let n = 1; n <= 10; n++) {
   if (name) data[`R_${n}_INITIAL`] = String(name).charAt(0).toUpperCase();
 }
 
+// HAS_REVIEWERS — set if at least one reviewer exists (used to hide the whole testimonials section)
+if (data.REVIEWER_1_NAME) data.HAS_REVIEWERS = '1';
+
 // GOOGLE_MAPS_EMBED_URL — always computed from address fields
 const addrParts = [data.ADDRESS_LINE_1, data.CITY, data.STATE, data.ZIP].filter(Boolean);
 data.GOOGLE_MAPS_EMBED_URL =
@@ -220,7 +222,10 @@ function replaceTokens(html, data) {
 }
 
 // ── Process each HTML file ────────────────────────────────────────────────────
-const htmlFiles = fs.readdirSync('.').filter(f => f.endsWith('.html')).sort();
+// program-template.html is excluded — handled separately by the generation loop below.
+const htmlFiles = fs.readdirSync('.')
+  .filter(f => f.endsWith('.html') && f !== 'program-template.html')
+  .sort();
 const unfilled  = new Set();
 const TOKEN_RE  = /\[[A-Z][A-Z_0-9]+\]/g;
 
@@ -235,6 +240,52 @@ for (const file of htmlFiles) {
 
   fs.writeFileSync(path.join('dist', file), html, 'utf8');
   console.log(`  ✓  ${file}`);
+}
+
+// ── N-program-page generation loop ───────────────────────────────────────────
+// Reads program-template.html, generates program-1.html … program-N.html in dist/.
+// Stops at the first undefined PROGRAM_N_NAME (max 6). Skips if source file exists.
+//
+// Generic token → numbered mapping per iteration:
+//   [PROGRAM_NAME]        → PROGRAM_N_NAME
+//   [AGE_RANGE]           → PROGRAM_N_AGE_RANGE
+//   [PROGRAM_PHOTO]       → PROGRAM_N_PHOTO
+//   [PROGRAM_DAYS]        → PROGRAM_N_DAYS
+//   [PROGRAM_DESCRIPTION] → PROGRAM_N_DESCRIPTION
+if (fs.existsSync('program-template.html')) {
+  const GENERIC_MAP = [
+    ['PROGRAM_NAME',        n => `PROGRAM_${n}_NAME`],
+    ['AGE_RANGE',           n => `PROGRAM_${n}_AGE_RANGE`],
+    ['PROGRAM_PHOTO',       n => `PROGRAM_${n}_PHOTO`],
+    ['PROGRAM_DAYS',        n => `PROGRAM_${n}_DAYS`],
+    ['PROGRAM_DESCRIPTION', n => `PROGRAM_${n}_DESCRIPTION`],
+  ];
+
+  for (let n = 1; n <= 6; n++) {
+    if (!data[`PROGRAM_${n}_NAME`]) break;
+
+    const sourceFile = `program-${n}.html`;
+    if (fs.existsSync(sourceFile)) continue; // hand-crafted page takes precedence
+
+    let page = fs.readFileSync('program-template.html', 'utf8');
+
+    // Map generic tokens to this program's numbered values
+    for (const [generic, getKey] of GENERIC_MAP) {
+      const val = data[getKey(n)];
+      if (val) page = page.split(`[${generic}]`).join(String(val));
+    }
+
+    page = processIfBlocks(page, data);
+    page = replaceTokens(page, data);
+
+    // Collect unfilled tokens from generated pages
+    TOKEN_RE.lastIndex = 0;
+    let m;
+    while ((m = TOKEN_RE.exec(page)) !== null) unfilled.add(m[0]);
+
+    fs.writeFileSync(path.join('dist', sourceFile), page, 'utf8');
+    console.log(`  ✓  program-${n}.html (generated from template)`);
+  }
 }
 
 // ── Report ────────────────────────────────────────────────────────────────────
