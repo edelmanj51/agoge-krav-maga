@@ -333,15 +333,13 @@
 
 <!-- ============================================================
      SECTION 3: BENEFITS — 3 columns
-     TWO READY-TO-USE VERSIONS BELOW.
-     Keep one, delete the other.
-     • KIDS VERSION  → "How This Program Will Help Your Child"
-     • ADULT VERSION → "How This Program Will Help You"
+     Set one audience token per program in client-data.yaml:
+       PROGRAM_N_AUDIENCE_KIDS   → ages 5–8  (little kids)
+       PROGRAM_N_AUDIENCE_TEENS  → ages 9–17 (kids / teens)
+       PROGRAM_N_AUDIENCE_ADULTS → ages 16+  (adults)
 ============================================================ -->
 
-<!-- ══════════════════════════════════════════
-     KIDS VERSION — use for children's programs
-     ══════════════════════════════════════════ -->
+<!-- [IF:PROGRAM_AUDIENCE_KIDS] -->
 <section id="benefits">
   <div class="container">
     <div class="benefits-header reveal">
@@ -378,11 +376,48 @@
     </div>
   </div>
 </section>
+<!-- [/IF:PROGRAM_AUDIENCE_KIDS] -->
 
-<!-- ══════════════════════════════════════════════
-     ADULT VERSION — use for teen/adult programs
-     (delete the KIDS section above and uncomment this)
-     ══════════════════════════════════════════════
+<!-- [IF:PROGRAM_AUDIENCE_TEENS] -->
+<section id="benefits">
+  <div class="container">
+    <div class="benefits-header reveal">
+      <span class="eyebrow">What They'll Gain</span>
+      <h2>What Your Teen Will Get Out of This</h2>
+      <p>Real results — on the mats and in every part of life.</p>
+    </div>
+    <div class="benefits-grid">
+
+      <div class="benefit-card reveal">
+        <div class="benefit-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3>Real Self-Defense Skills</h3>
+        <p>Teens learn practical techniques that work against real threats — not choreography. They'll know what to do when it counts and have the confidence to back it up.</p>
+      </div>
+
+      <div class="benefit-card reveal">
+        <div class="benefit-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h3>Build Confidence and Resilience</h3>
+        <p>Every technique mastered and every challenge pushed through builds the kind of quiet, earned confidence that carries into school, social situations, and their future.</p>
+      </div>
+
+      <div class="benefit-card reveal">
+        <div class="benefit-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+        </div>
+        <h3>Develop Focus and Discipline</h3>
+        <p>Martial arts training sharpens the mental skills teens need most — attention, self-control, and the drive to finish what they start. Skills that show up directly in school and beyond.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- [/IF:PROGRAM_AUDIENCE_TEENS] -->
+
+<!-- [IF:PROGRAM_AUDIENCE_ADULTS] -->
 <section id="benefits">
   <div class="container">
     <div class="benefits-header reveal">
@@ -419,7 +454,7 @@
     </div>
   </div>
 </section>
--->
+<!-- [/IF:PROGRAM_AUDIENCE_ADULTS] -->
 
 
 <!-- ============================================================

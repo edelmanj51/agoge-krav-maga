@@ -24,7 +24,7 @@ HERO_SUBHEADLINE: "Lindale's Premier Krav Maga Academy — Adults, Teens &amp; K
 HERO_SUBTEXT: "Join a mission-driven community where you'll build real skills, unshakable confidence, and the mindset of a Balanced Warrior. Book your free class today."
 STAR_RATING: "5.0"
 # NOTE: REVIEW_COUNT is a conservative estimate — not confirmed. Verify via Google or client before launch.
-REVIEW_COUNT: "25"
+REVIEW_COUNT: "20"
 # NOTE: STUDENT_COUNT intentionally omitted — not found on site. IF block hides the stat.
 ABOUT_TEXT: "Agoge Krav Maga is a mission-driven self-defense community in Lindale, TX, serving Tyler and all of East Texas. We empower families, adults, and first responders with life-saving skills, practical fitness, and unshakable confidence through our Balanced Warrior™ training system."
 INSTRUCTOR_1_NAME: "Asher Lester"
@@ -35,6 +35,9 @@ INSTRUCTOR_2_NAME: "Elle Trevino"
 INSTRUCTOR_2_PHOTO: images/instructor/elle.png
 INSTRUCTOR_2_TITLE: "Co-Owner & Certified Krav Maga Instructor, ISSA Personal Trainer"
 INSTRUCTOR_2_BIO: "Elle Trevino has trained in Krav Maga for 12 years and is a Phase C certified instructor through Krav Maga Worldwide and the Krav Maga Association of America. A former Registered Behavior Technician in a pediatric psychology clinic, Elle brings exceptional coaching skill to every age group — certified in nonviolent de-escalation, combatives, and self-defense for both youth and adults."
+PROGRAM_1_AUDIENCE_ADULTS: "1"
+PROGRAM_2_AUDIENCE_TEENS: "1"
+PROGRAM_3_AUDIENCE_KIDS: "1"
 PROGRAM_1_NAME: "Adult Krav Maga"
 PROGRAM_1_PHOTO: images/programs/program-1/adult-krav-maga.jpg
 PROGRAM_1_AGE_RANGE: "Ages 16+"
