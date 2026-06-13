@@ -11,7 +11,7 @@ ADDRESS_LINE_1: "18492 US Hwy 69 N"
 PHONE: "(903) 993-4450"
 EMAIL: agogekravmaga@gmail.com
 HOURS: "Mon, Tue, Thu & Fri 4:30–7:30pm"
-HOURS_SHORT: "Mon, Tue, Thu & Fri 4:30-7:30pm"
+DAYS_OPEN: "Mon, Tue, Thu & Fri 4:30-7:30pm"
 # NOTE: YEAR_FOUNDED intentionally omitted — not found on site or Google. Ask client. IF blocks hide it.
 PRIMARY_COLOR: "#8C2B2B"
 SECONDARY_COLOR: "#22323D"
