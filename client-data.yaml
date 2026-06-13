@@ -58,10 +58,10 @@ PROGRAM_3_SESSION_LEN: "45-min classes"
 PROGRAM_3_DESCRIPTION: "Introduce your child to the fundamentals of self-defense, awareness, and confidence in a fun, age-appropriate setting. Parents across East Texas trust our Kids program because it prepares young people for real-world situations — not trophies."
 CLASS_SCHEDULE_HTML: "<table class=\"sched\" role=\"table\" aria-label=\"Weekly class schedule\"><thead><tr><th scope=\"col\">Program</th><th scope=\"col\">Monday</th><th scope=\"col\">Tuesday</th><th scope=\"col\">Thursday</th><th scope=\"col\">Friday</th></tr></thead><tbody><tr><td>Youth Krav Maga (Kids)<br><small style=\"color:#64748b\">Ages 5–8</small></td><td><span class=\"time-slot kids\">4:30pm – 5:15pm</span></td><td><span class=\"time-slot kids\">4:30pm – 5:15pm</span></td><td><span class=\"time-slot kids\">4:30pm – 5:15pm</span></td><td><span class=\"time-slot kids\">4:30pm – 5:15pm</span></td></tr><tr><td>Youth Krav Maga (Teens)<br><small style=\"color:#64748b\">Ages 9–15</small></td><td><span class=\"time-slot teens\">5:30pm – 6:15pm</span></td><td><span class=\"time-slot teens\">5:30pm – 6:15pm</span></td><td><span class=\"time-slot teens\">5:30pm – 6:15pm</span></td><td><span class=\"time-slot teens\">5:30pm – 6:15pm</span></td></tr><tr><td>Adult Krav Maga<br><small style=\"color:#64748b\">Ages 16+</small></td><td><span class=\"time-slot adult\">6:30pm – 7:30pm</span></td><td><span class=\"time-slot adult\">6:30pm – 7:30pm</span></td><td><span class=\"time-slot adult\">6:30pm – 7:30pm</span></td><td><span class=\"time-slot adult\">6:30pm – 7:30pm</span></td></tr></tbody></table>"
 # NOTE: All webhook/calendar URLs below are PLACEHOLDER values — replace with actual GHL URLs before launch.
-TRIAL_WEBHOOK_URL: https://services.leadconnectorhq.com/hooks/AGOGE_PLACEHOLDER/webhook-trigger/trial
-STARTER_KIT_WEBHOOK_URL: https://services.leadconnectorhq.com/hooks/AGOGE_PLACEHOLDER/webhook-trigger/kit
-QUIZ_WEBHOOK_URL: https://services.leadconnectorhq.com/hooks/AGOGE_PLACEHOLDER/webhook-trigger/quiz
-FINAL_CTA_WEBHOOK_URL: https://services.leadconnectorhq.com/hooks/AGOGE_PLACEHOLDER/webhook-trigger/final
+TRIAL_WEBHOOK_URL: https://services.leadconnectorhq.com/hooks/uqWnrM78wKJSiYYkNXr5/webhook-trigger/EB6T30acpx566n5kUHVK
+STARTER_KIT_WEBHOOK_URL: https://services.leadconnectorhq.com/hooks/uqWnrM78wKJSiYYkNXr5/webhook-trigger/EB6T30acpx566n5kUHVK
+QUIZ_WEBHOOK_URL: https://services.leadconnectorhq.com/hooks/uqWnrM78wKJSiYYkNXr5/webhook-trigger/EB6T30acpx566n5kUHVK
+FINAL_CTA_WEBHOOK_URL: https://services.leadconnectorhq.com/hooks/uqWnrM78wKJSiYYkNXr5/webhook-trigger/EB6T30acpx566n5kUHVK
 BOOKING_CALENDAR_URL: https://api.leadconnectorhq.com/widget/group/B5wkhZ9twCZKZJiBfltI
 PRIVACY_POLICY_URL: https://www.agogekm.com/privacy-policy
 # No reviewers yet — add REVIEWER_1_NAME, REVIEWER_1_DATE, REVIEWER_1_TEXT when Google reviews are verified
