@@ -62,6 +62,6 @@ TRIAL_WEBHOOK_URL: https://services.leadconnectorhq.com/hooks/AGOGE_PLACEHOLDER/
 STARTER_KIT_WEBHOOK_URL: https://services.leadconnectorhq.com/hooks/AGOGE_PLACEHOLDER/webhook-trigger/kit
 QUIZ_WEBHOOK_URL: https://services.leadconnectorhq.com/hooks/AGOGE_PLACEHOLDER/webhook-trigger/quiz
 FINAL_CTA_WEBHOOK_URL: https://services.leadconnectorhq.com/hooks/AGOGE_PLACEHOLDER/webhook-trigger/final
-BOOKING_CALENDAR_URL: https://api.leadconnectorhq.com/widget/group/AGOGE_PLACEHOLDER
+BOOKING_CALENDAR_URL: https://api.leadconnectorhq.com/widget/group/B5wkhZ9twCZKZJiBfltI
 PRIVACY_POLICY_URL: https://www.agogekm.com/privacy-policy
 # No reviewers yet — add REVIEWER_1_NAME, REVIEWER_1_DATE, REVIEWER_1_TEXT when Google reviews are verified
